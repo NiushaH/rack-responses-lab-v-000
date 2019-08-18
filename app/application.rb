@@ -1,3 +1,5 @@
+require 'pry'
+
 class Application
  
   def call(env)
@@ -10,6 +12,7 @@ class Application
       resp.write "Good Morning!"
     elsif h.between?(12, 23)
       resp.write "Good Afternoon!"
+      binding.pry
     end
  
     resp.finish
