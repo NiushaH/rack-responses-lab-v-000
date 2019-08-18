@@ -8,7 +8,7 @@ class Application
  
     if h.between?(0, 11) 
       resp.write "Good Morning!"
-    elsif h.between?(12, 23)
+    else
       resp.write "Good Afternoon!"
     end
  
