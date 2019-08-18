@@ -6,7 +6,7 @@ class Application
     t = Time.new.hour
     h = t.hour
  
-    if h > 11 
+    if t > 11 
       resp.write "Good Afternoon!"
     else
       resp.write "Good Morning!"
