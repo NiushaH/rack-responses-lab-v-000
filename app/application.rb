@@ -3,13 +3,10 @@ class Application
   def call(env)
     resp = Rack::Response.new
  
-    
+    t = Time.new
+    h = t.hour
  
-    resp.write "#{num_1}\n"
-    resp.write "#{num_2}\n"
-    resp.write "#{num_3}\n"
- 
-    if num_1==num_2 && num_2==num_3
+    if h.between?(0, 111) 
       resp.write "You Win"
     else
       resp.write "You Lose"
