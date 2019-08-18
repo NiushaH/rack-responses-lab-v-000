@@ -6,11 +6,10 @@ class Application
     t = Time.new
     h = t.hour
  
-    if h.between?(0, 11) 
+    if h < 11 
       resp.write "Good Morning!"
-    elsif h > 11
+    else
       resp.write "Good Afternoon!"
-    else  
     end
  
     resp.finish
