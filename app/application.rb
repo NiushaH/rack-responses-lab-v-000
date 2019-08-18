@@ -12,7 +12,7 @@ class Application
       resp.write "Good Morning!"
     elsif h.between?(12, 23)
       resp.write "Good Afternoon!"
-      binding.pry
+  binding.pry
     end
  
     resp.finish
